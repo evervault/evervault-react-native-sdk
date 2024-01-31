@@ -11,11 +11,11 @@ npm install react-native-evervault-sdk
 ## Usage
 
 ```js
-import { multiply } from 'react-native-evervault-sdk';
+import { encrypt } from 'react-native-evervault-sdk';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await encrypt("encrypt me");
 ```
 
 ## Contributing
