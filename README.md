@@ -7,14 +7,20 @@ Evervault react native sdk
 ```sh
 npm install @evervault/evervault-react-native
 ```
+or 
+```sh
+yarn add @evervault/evervault-react-native
 
 ## Setup iOS + React Native v0.60
 ```
+cd ios
 pod install
+cd ..
 ```
 
 ## Usage
-```js
+```typescript
+// .tsx
 import { init, encrypt } from '@evervault/evervault-react-native';
 
 export default function Component() {
