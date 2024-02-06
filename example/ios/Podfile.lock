@@ -2,9 +2,9 @@ PODS:
   - boost (1.83.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
-  - Evervault (0.3.1):
-    - Evervault/EvervaultCore (= 0.3.1)
-  - Evervault/EvervaultCore (0.3.1)
+  - Evervault (0.3.2):
+    - Evervault/EvervaultCore (= 0.3.2)
+  - Evervault/EvervaultCore (0.3.2)
   - FBLazyVector (0.73.3)
   - FBReactNativeSpec (0.73.3):
     - RCT-Folly (= 2022.05.16.00)
@@ -948,7 +948,7 @@ PODS:
     - glog
     - React-debug
   - react-native-evervault-sdk (0.1.0):
-    - Evervault (= 0.3.1)
+    - Evervault (= 0.3.2)
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
@@ -1320,7 +1320,7 @@ SPEC CHECKSUMS:
   boost: d3f49c53809116a5d38da093a8aa78bf551aed09
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
-  Evervault: 8e5854536b49f645d74f826edb157c3756850f26
+  Evervault: bf3e125098e3a760ee8ebca07034c763d426fbc3
   FBLazyVector: 70590b4f9e8ae9b0ce076efacea3abd7bc585ace
   FBReactNativeSpec: e47ea8c8f044c25e41a4fa5e8b7ff3923d3e0a94
   Flipper: c7a0093234c4bdd456e363f2f19b2e4b27652d44
@@ -1357,7 +1357,7 @@ SPEC CHECKSUMS:
   React-jsinspector: 6fad0fe14882fb6b1c32e5cc8a4bd3d33a8b6790
   React-logger: cb0dd15ac67b00e7b771ef15203edcb29d4a3f8e
   React-Mapbuffer: d59258be3b0d2280c6ba8964ab6e36ec69211871
-  react-native-evervault-sdk: e998322da3e03808fb5defc133cf2f4763b2f33d
+  react-native-evervault-sdk: a164f9a515b2c19fd39fc34842730f50f7365103
   React-nativeconfig: 4d3076dc3dc498ec49819e4e4225b55d3507f902
   React-NativeModulesApple: 46f14baf36010b22ffd84fd89d5586e4148edfb3
   React-perflogger: 27ccacf853ba725524ef2b4e444f14e34d0837b0
@@ -1379,7 +1379,7 @@ SPEC CHECKSUMS:
   React-utils: b22b4a51aa578b3aac1e7c19501c0b9ba358ed79
   ReactCommon: e708b8be8cb317b83e31c6ccfeda8bf6c0d1a2b3
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  Yoga: ff0382b894475dba0b4d2a5fda860bfee5a9afad
+  Yoga: 08cd7601462818c4985bda7b205b9e6a92a7e66a
 
 PODFILE CHECKSUM: 2327886c67fc0687372aba082dded75139de9f81
 

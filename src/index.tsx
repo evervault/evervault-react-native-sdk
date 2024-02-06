@@ -18,5 +18,5 @@ const EvervaultSdk = NativeModules.EvervaultSdk
     );
 
 export function encrypt(data: any): Promise<string> {
-  return EvervaultSdk.encrypt(JSON.stringify(data));
+  return EvervaultSdk.encrypt(data);
 }
