@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { encrypt } from 'react-native-evervault-sdk';
+import { encrypt, init } from '@evervault/evervault-react-native';
 
 export default function App() {
   const [encObject, setEncObject] = React.useState<string | undefined>();
@@ -10,6 +10,15 @@ export default function App() {
   const testEncArray = ['encrypt', 'me', 'please'];
 
   React.useEffect(() => {
+    async function initEvervault() {
+      try {
+        await init('TEAM_UUID', 'APP_UUID');
+      }
+      catch (error) {
+        console.error(error);
+      }
+    }
+    initEvervault();
     encrypt(testEncObject).then(setEncObject);
     encrypt(testEncArray).then(setEncArray);
   }, []);
