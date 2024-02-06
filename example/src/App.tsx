@@ -4,20 +4,20 @@ import { StyleSheet, View, Text } from 'react-native';
 import { encrypt } from 'react-native-evervault-sdk';
 
 export default function App() {
-  const [result, setResultS] = React.useState<string | undefined>();
-  const [resultN, setResultN] = React.useState<string | undefined>();
-  const toEncryptS = 'encrypt me!';
-  const toEncryptN = 0;
+  const [encObject, setEncObject] = React.useState<string | undefined>();
+  const [encArray, setEncArray] = React.useState<string | undefined>();
+  const testEncObject = { key: 'value', boolKey: true, number: 123};
+  const testEncArray = ['encrypt', 'me', 'please'];
 
   React.useEffect(() => {
-    encrypt(toEncryptS).then(setResultS);
-    encrypt(toEncryptN).then(setResultN);
+    encrypt(testEncObject).then(setEncObject);
+    encrypt(testEncArray).then(setEncArray);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
-      <Text>Result: {resultN}</Text>
+      <Text>Encrypted Object: {JSON.stringify(encObject)}</Text>
+      <Text>Encrypted Array: {encArray}</Text>
     </View>
   );
 }
